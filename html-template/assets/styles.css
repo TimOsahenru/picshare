@@ -1,0 +1,291 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px 0;
+    gap: 20px;
+}
+
+/* Updated Navigation Column Styles */
+.nav-column {
+    position: fixed;
+    /* top: 10px; */
+    left: 10px;
+    width: 20%;
+    padding: 15px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    height: fit-content;
+}
+
+.nav-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-column li {
+    margin-bottom: 20px;
+}
+
+.nav-column a {
+    text-decoration: none;
+    color: #333;
+    font-size: 20px;
+    font-weight: bold;
+    display: inline-block;
+    padding: 10px 0;
+}
+
+.nav-column a:hover {
+    color: #1d9bf0;
+}
+
+
+/* Main Content Area */
+main {
+    margin-left: 200px;
+    width: 50%;
+}
+
+/* Post Styles */
+.post {
+    background-color: #ffffff;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+}
+
+.post img {
+    width: 100%;
+    max-width: 300px;
+    max-height: 300px;
+    object-fit: cover;
+    align-self: center;
+}
+
+.caption {
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Right Column Styles */
+.right-column {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: fixed;
+    left: 70%;
+}
+
+/* Activity Column */
+.activity-column {
+    padding: 15px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    height: fit-content;
+}
+
+.activity-column h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.activity-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.activity-column li {
+    margin-bottom: 10px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.profile-img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/* Suggestions Column */
+.suggestions-column {
+    padding: 15px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    height: fit-content;
+}
+
+.suggestions-column h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.suggestions-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.suggestions-column li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.suggestion-details {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.follow-btn {
+    background-color: #3897f0;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* New Post Form Styles */
+.new-post-form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.new-post-form h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.new-post-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#post-image {
+    padding: 10px;
+}
+
+#caption {
+    resize: none;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    height: 100px;
+}
+
+.submit-btn {
+    background-color: #3897f0;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    align-self: flex-start;
+}
+
+.submit-btn:hover {
+    background-color: #2e81e0;
+}
+
+/* Post Actions Styles */
+.post-actions {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    border-top: 1px solid #e0e0e0;
+}
+
+.action-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px;
+    transition: color 0.3s ease;
+}
+
+.action-btn:hover {
+    color: #1d9bf0;  /* Change color when hovered */
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px; /* Space between images */
+    margin-top: 20px; /* Space above the grid */
+}
+
+.grid-item {
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover;
+}
+
+.bio {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+#bio-text {
+    flex: 1; /* Allows the text to take available space */
+    font-size: 16px; /* Adjust font size as needed */
+}
+
+.edit-btn {
+    background-color: transparent; /* Make it transparent */
+    border: none; /* No border */
+    color: #1d9bf0; /* Color of the edit button */
+    cursor: pointer; /* Cursor pointer for interactivity */
+    font-size: 16px; /* Font size */
+    margin-left: 10px; /* Space between text and button */
+    transition: color 0.3s ease; /* Transition for hover effect */
+}
+
+.edit-btn:hover {
+    color: #1a8cd8; /* Darker shade on hover */
+}

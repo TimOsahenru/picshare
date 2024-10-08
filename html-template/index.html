@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Instagram Clone</title>
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+    <header>
+        <h1>My Social Page</h1>
+    </header>
+    
+    <div class="container">
+        <!-- Navigation Column (Left Side) -->
+        <nav class="nav-column">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#explore">Explore</a></li>
+                <li><a href="#notifications">Notifications</a></li>
+                <li><a href="#messages">Messages</a></li>
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#settings">Settings</a></li>
+            </ul>
+        </nav>
+    
+        <!-- Main Content Area -->
+        <main>
+               <!-- Form to Add New Post -->
+        <div class="new-post-form">
+            <h2>Create a New Post</h2>
+            <form id="post-form">
+                <input type="file" id="post-image" name="post-image" accept="image/*" required>
+                <textarea id="caption" name="caption" placeholder="Write a caption..." required></textarea>
+                <button type="submit" class="submit-btn">Post</button>
+            </form>
+        </div>
+            <div class="post">
+                <img src="images/cat-1.jpg" alt="Post">
+                <div class="caption">
+                    <p>Caption for the post...</p>
+                   <!-- Post Actions (like, comment, share) -->
+<!-- Post Actions (like, comment, share) -->
+<div class="post-actions">
+    <button class="action-btn like-btn">
+        ❤️ Like
+    </button>
+    <button class="action-btn comment-btn">
+        💬 Comment
+    </button>
+    <button class="action-btn share-btn">
+        🔄 Share
+    </button>
+</div>
+
+
+                </div>
+            </div>
+            <div class="post">
+                <img src="images/cat-1.jpg" alt="Post">
+                <div class="caption">
+                    <p>Caption for the post...</p>
+                   <!-- Post Actions (like, comment, share) -->
+<!-- Post Actions (like, comment, share) -->
+<div class="post-actions">
+    <button class="action-btn like-btn">
+        ❤️ Like
+    </button>
+    <button class="action-btn comment-btn">
+        💬 Comment
+    </button>
+    <button class="action-btn share-btn">
+        🔄 Share
+    </button>
+</div>
+
+
+                </div>
+            </div>
+            <div class="post">
+                <img src="images/cat-1.jpg" alt="Post">
+                <div class="caption">
+                    <p>Caption for the post...</p>
+                   <!-- Post Actions (like, comment, share) -->
+<!-- Post Actions (like, comment, share) -->
+<div class="post-actions">
+    <button class="action-btn like-btn">
+        ❤️ Like
+    </button>
+    <button class="action-btn comment-btn">
+        💬 Comment
+    </button>
+    <button class="action-btn share-btn">
+        🔄 Share
+    </button>
+</div>
+
+
+                </div>
+            </div>
+            <!-- Add more posts as needed -->
+        </main>
+    
+        <!-- Right Side Columns -->
+        <div class="right-column">
+            <!-- Activity Column -->
+            <aside class="activity-column">
+                <h2>Activity</h2>
+                <ul>
+                    <li>
+                        <img src="images/cat-1.jpg" alt="User1 Profile" class="profile-img">
+                        liked your photo
+                    </li>
+                    <li>
+                        <img src="images/cat-1.jpg" alt="User2 Profile" class="profile-img">
+                        commented on your post
+                    </li>
+                    <li>
+                        <img src="images/cat-1.jpg" alt="User3 Profile" class="profile-img">
+                        started following you
+                    </li>
+                </ul>
+            </aside>
+    
+            <!-- Suggestions Column -->
+            <aside class="suggestions-column">
+                <h2>Suggestions for You</h2>
+                <ul>
+                    <li>
+                        <img src="images/cat-1.jpg" alt="Suggested User 1" class="profile-img">
+                        <div class="suggestion-details">
+                            <strong>SuggestedUser1</strong>
+                            <button class="follow-btn">Follow</button>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/cat-1.jpg" alt="Suggested User 2" class="profile-img">
+                        <div class="suggestion-details">
+                            <strong>SuggestedUser2</strong>
+                            <button class="follow-btn">Follow</button>
+                        </div>
+                    </li>
+                </ul>
+            </aside>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
