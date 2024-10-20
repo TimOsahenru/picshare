@@ -1,12 +1,12 @@
 # PicShare
 
 ## Overview
-PicShare is a social media web application built with 
-Python and Django. It enables users to create profiles, 
-share photos and posts, connect with friends, and engage 
-with content through likes and comments. 
-Developed as a learning project, PicShare explores the 
-capabilities of Django in creating a fully functional, 
+PicShare is a social media web application built with
+Python and Django. It enables users to create profiles,
+share photos and posts, connect with friends, and engage
+with content through likes and comments.
+Developed as a learning project, PicShare explores the
+capabilities of Django in creating a fully functional,
 interactive social platform.
 
 ## Features
